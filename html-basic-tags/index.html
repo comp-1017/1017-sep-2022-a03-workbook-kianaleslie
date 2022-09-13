@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <meta charset="utf-8">
+        <meta name="author" content="Kiana leslie">
+        <title>My Framework</title>
     <head>
         <!--
             This structure is a comment block in html files.
@@ -22,9 +25,6 @@
               engines, and many other assists.
 
         -->
-        <meta charset="utf-8">
-        <meta name="author" content="Kiana leslie">
-        <title>My Framework</title>
     </head>
     <body>
      <!--
@@ -63,14 +63,14 @@
      </p>
     
      <!--
-        if yuo wish to use a component of a reserved tag (or the whole tag)
+        If you wish to use a component of a reserved tag (or the whole tag)
           you would run into trouble using the tag
         instead you can use special character strings to represent components
           of the tag such as: < (&lt;) and (&gt;) > symbols
      -->
      <h3>List tags: &lt;ol&gt; and &lt;ul&lt;</h3>
      <!-- 
-        block tag
+        Block tag
           create an ordered list (numbered) using <ol>
           create an underlined list (bulleted) using the line item <ul>
           items in the list are indicated using the line item <li>
@@ -79,13 +79,9 @@
      <p>Add extension Live Server for Go Live execution within VSC</p>
      <ol>
         <li>Open VSC and select you extension icon</li>
-        <li>Select (if seen) or search for the Live Server in the extension
-            list
-        </li>
+        <li>Select (if seen) or search for the Live Server in the extension list</li>
         <li>Press the install button</li>
-        <li>After the install, check the bottom right coner on the blue line
-            for text Go Live
-        </li>
+        <li>After the install, check the bottom right coner on the blue line for text Go Live</li>
         <li>To use Go Live
             <ul>
                 <li>open an html file</li>
@@ -95,5 +91,22 @@
             </ul>
         </li>
      </ol>
+
+     <h3>Anchor tag (aka link to another page)</h3>
+     <!--
+        This is an anchor tag and is often referred to as an anchor tag.
+        One should NOT use the phrase "link tag" because there is actually a link tag used in the <head> area
+        The anchor tag can take you to 
+          - a different web site
+          - a different web page within the same web site
+          - a different location of the same page
+
+          parameters:
+          href: points to the desired location
+          target: optional
+                   default is the same browser display page
+                   _blank will open the destination in a new browser tab (page)
+        -->
+        <a href="https://www.nait.ca" target="_blank"> Nait </a>
     </body>
 </html>
