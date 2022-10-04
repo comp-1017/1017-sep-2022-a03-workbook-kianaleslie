@@ -13,20 +13,52 @@
                     <li><a href = "#" > Home </a></li>
                     <li><a href = "index-inline.html" > Inline </a></li>
                     <li><a href = "index-embedded.html" > Embedded </a></li>
-                    <li><a href = "css-preferred/index-link.html" > Linked StyleSheet </a></li>
+                    <li><a href = "css-preferred/index-link.html" > Link StyleSheet </a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section><h2>Create Navigational Links within a Website</h2>
-                <p>There are several techniques to navigate within a website. The semantic tag for navigation is the &lt;nav&lt; tag. You can navigate through your website by using relaltive addressing. For our examples we will use the unordered list tag (&lt;ul&lt;)</p>
+            <aside>
+                <h2>Create Navigational Links within a Website</h2>
+                <p>There are several techniques to navigate within a website. The semantic tag for navigation is the &lt;nav&gt; tag. You can navigate through your website by using relaltive addressing. For our examples we will use the unordered list tag (&lt;ul&gt;)</p>
                 <ul>
                     <li>Page to page within the same folder</li>
                     <li>Page to page between folders</li>
                     <li>Staying on the current page</li>
                     <li>Going to a specific place on the current page (on page navigation)</li>
                 </ul>
-                <p>Navigational menus are placed in your &lt;header&lt; semantic area. They may also be placed in your &lt;footer&lt; area as a site map. The nav tag, like other semantic tags, should have a  &lt;hx&lt; tag, HOWEVER this header is optional. If you omit the header tag you will recieve a document outliner error: Untitled Section. Until you are shown how to avoid this error message, it will be acceptable on your document outline. </p>
+                <p>Navigational menus are placed in your &lt;header&gt; semantic area. They may also be placed in your &lt;footer&gt; area as a site map. The nav tag, like other semantic tags, should have a  &lt;hx&gt; tag, HOWEVER this header is optional. If you omit the header tag you will recieve a document outliner error: Untitled Section. Until you are shown how to avoid this error message, it will be acceptable on your document outline. </p>
+            </aside>
+            <section>
+                <h2>CSS Codiing Styles</h2>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td>Browser Defaults (no CSS)</td>
+                            <td width = "400px">You have no control over the styling</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Inline</td>
+                            <td>This is for a single specific element (tag) instance. Your CSS will be specified in a parameter within the element. This CSS affects ONLY the element tag that contains the specification.</td>
+                            <td>&lt;p&gt;Style="rule;[rules...]"&lt;/p&gt;</td> 
+                            <td>&lt;p&gt;style="colour:red; width:50px;"&lt;/p&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Embedded</td>
+                            <td>The specification of CSS as embedded happens in your &lt;head&gt; area. This CSS affects all similar elements on the web page where the the CSS is coded. </td>
+                            <td>&lt;style&gt; selector {rule; [rule; ...]}{selector{rule; [rule; ...]} ...&lt;/style&gt;</td>
+                            <td>&lt;style&gt; p {colour:red, width:50px;} h1 {font-style:italic}&lt;/style&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Link (StyleSheet)</td>
+                            <td>This is the preferred method of doing CSS. You place you CSS in a seperate physical file. This file can then be used on ANY web page in your website. The link to this file will be done in your &lt;head&gt; area. The CSS in this file is similar to your embedded EXCEPT there is no &lt;style&gt; tag.</td>
+                            <td>selector {rule; [rule; ...]}{selector{rule; [rule; ...]} ...</td>
+                            <td> p {colour:red, width:50px;} h1 {font-style:italic}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer>
