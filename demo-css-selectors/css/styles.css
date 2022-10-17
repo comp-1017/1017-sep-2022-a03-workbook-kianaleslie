@@ -96,7 +96,7 @@ syntax: .user-name {rules}
 on html: a class is specified within a html tag
 syntax: <tag class="user-name">
 
-you can have mutliple classes on one html tag 
+- you can have mutliple classes on one html tag 
 NOTE: the list does NOT use a seperating comma
 
 syntax: <tag class="user-name1 user-name2 ...>
