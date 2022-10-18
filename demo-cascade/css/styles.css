@@ -1,0 +1,125 @@
+footer{
+    background-color: #333333;
+    color: peachpuff;
+}
+/********************************************************************************
+
+make a specific class with your css rule
+
+*********************************************************************************/
+/*.nav-background{
+    background-color: paleturquoise;
+}*/
+/*ul{
+    background-color: paleturquoise;
+}*/
+
+ul{
+    background-color: darkslateblue;
+}
+/********************************************************************************
+
+decendant selector
+
+*********************************************************************************/
+nav ul{
+    background-color: rgb(173, 164, 197);
+}
+
+/********************************************************************************
+
+specificity:
+it is a value assigned to the selector depending on meeting different criteria
+
+selector type:
+- element selector get a value of 1
+- class selector get a value of 10
+- id selector get a value of 100 (only used once on a page so not used much)
+SPECIAL NOTE: ALL inline styling get a value of 1000
+
+specificity decisions are based on the value of the selector
+
+if the specificity of conflicting rules is the same then "the last coded rule wins"
+
+*********************************************************************************/
+
+footer,
+footer a{
+    color: white;
+}
+
+/********************************************************************************
+
+first set element select li to a border-bottom
+
+concern: BOTH nav and footer li were affected
+
+solution: 
+a) use a decendant selector (nav li > li)
+b) use a class selector (li-border > li) 10 > li; as a targeted class
+
+*********************************************************************************/
+
+.li-border{
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    border-bottom: 5px dotted black;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+/********************************************************************************
+
+classes: 
+syntax: .user name { rules }
+you are NOT to use element names
+user name MUST be meaningful AND may include the element name
+classes can be attached to any elemtent
+classes are independant of an element 
+on the html page, to use <element class="username (optional username2 username3 ...)"
+
+types: user {targeted} class
+    pseudo class, these are attached to elements
+
+    example: anchor tag
+    NOTE: the order in which you code your pseudo classes for the anchor tag is EXTREMELY important
+
+    a:link - unused link
+    a:visited - used when the anchor tag link has been clicked on previously
+    a:hover - used when your cursor hovers over the anchor tag 
+    a:active - used when you are actually clicking the anchor tag 
+
+*********************************************************************************/
+
+nav ul li a:visited{
+    color: dodgerblue
+}
+
+nav ul li a:hover{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav ul li a:active{
+    color: deeppink;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+    padding: 10px;
+}
+
+p{
+    color:aliceblue;
+    background-color:thistle;
+}
