@@ -1,0 +1,14 @@
+body {
+	background-color: white;
+}
+
+/* 
+auto makes the code center aligned
+line height is the distance between each font line
+*/
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
