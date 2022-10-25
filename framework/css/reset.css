@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 /* 
-This "reset" css file is public and it strips the default of browsers
+This "reset" css file is public and it strips the default of browsers - optional (if want default browser settiings don't include this css file)
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
