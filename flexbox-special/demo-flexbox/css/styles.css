@@ -1,0 +1,98 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+
+/*CLEAR FIX SOLLUTION*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+main{
+    background-color:aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+/**
+margin and padding: top right bottom left
+**/
+.asidesize{
+    margin: 10px 0px 10px 10px;
+    width: 150px;
+    height: 600px;
+    border: 2px solid black;
+}
+/**
+margin are 10px between outer edges and boxes (red, blue green paint)
+margin 10px between inner boxes (red, blue green paint)
+border of 2px around boxes and main
+
+red given: 150px
+calculation for blue and green
+960 = column1 + column2 + right margin/main borders 
+960 = (lm + lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + rp + rb + rm) + 10 + 2 + 2 --calc for aside
+960 = (10 + 2 + 0 + 150 + 0 + 2 + 0) + (10 + 2 + 0 + content + 0 + 2 + 0) + 14
+960 = 192 + content
+960 - 192 = content 
+763 = content
+
+the height of the right column items can use a similar calculation as the one above
+REMEMBER: the vertical margin (VM) between items are collapsed 
+
+aside is 600px
+
+600 = 2(tb + tp + content + bp + tb) + VM
+this only works because the content area is the same and the verticle contetn height area is the same and the VM is the same
+600 = 2(2 + 0 + content + 0 + 2) + 10
+600 = 2 * 4 + 10 + 2 * content
+600 = 18 + 2 * content
+582 / 2 = content 
+291 = content
+
+**/
+.contentsize{
+    margin: 10px 0px 10px 10px;
+    width: 763px;
+    height: 293px;
+    border: 2px solid black;
+}
+
+.red-paint{
+    background-color: darkred;
+}
+
+.blue-paint{
+    background-color: darkblue;
+}
+
+.green-paint{
+    background-color: darkgreen;
+}
