@@ -1,0 +1,57 @@
+body {
+	background-color: #fafafa;
+}
+ 
+/*
+text-align is not apart of our framework skeleton
+*/
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+h1{
+	font-size: 96px;
+	letter-spacing: -1px;
+}
+
+h2{
+	font-size: 36px;
+	color: #3d4245;
+}
+
+p{
+	font-size: 21px;
+	color: #9b9b9b;
+}
+
+.page-header p{
+	font-size: 48px;
+}
+/*
+layout 
+*/
+.page-header{
+	margin: 72px 0px 120px 0px;
+}
+
+section{
+	margin: 0px 0px 196px 0px;
+	padding: 0 24px;
+}
+
+section p{
+	margin-bottom: 24px;
+}
+
+section header img{
+	width: 100px;
+}
+
+section footer img{
+	margin: 0px 12px;
+}
