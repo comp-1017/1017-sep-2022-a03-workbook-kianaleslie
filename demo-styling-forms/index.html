@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kiana Leslie">
+    <title>Contact James Shoes</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="contact-us">
+            <nav class="site-navigation">
+                <h2 class="hidden">Site Navigation</h2>
+                <img src="img/the-james-shoes-logo.png" alt="the james mens shoes company logo">
+                <ul class="clearfix">
+                    <li><a href="#">loafers</a></li>
+                    <li><a href="#">dress boots</a></li>
+                    <li><a href="#">casual</a></li>
+                    <li><a href="#">work boots</a></li>
+                </ul>
+            </nav>
+            <h1>Contact Us</h1>
+        </header>
+        <main>
+            <form method="post">
+                <div style="display: flex">
+                    <div style="width: 47%; margin-right: 3%;">
+                        <h2>Left Column</h2>
+                        <div class="your-name">
+                            <label for="name">Your Name</label>
+                            <input id="name" name="name" type="text" placeholder="your name">
+                        </div>
+                        <div class="email-address">
+                            <label for="email">Your Email</label>
+                            <input id="email" name="email" type="email" placeholder="your email">
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone">Your Phone</label>
+                            <input id="phone" name="phone" type="text" placeholder="your phone">
+                        </div>
+                        <div class="message">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="enter your message here"></textarea>
+                        </div>
+                    </div>
+                    <div style="width: 47%; margin-right: 3%;">
+                    <h2>Right Column</h2>
+                    <div class="due-date">
+                        <label for="due-date">Due Date</label>
+                        <input id="due-date" name="due-date" type="date">
+                    </div>
+                    <div>
+                        <label for="mymeal">My Meal</label>
+                        <input id="mymeal" name="mymeal" type="radio" value="breakfast">Breakfast
+                        <input id="mymeal" name="mymeal" type="radio" value="lunch">Lunch
+                        <input id="mymeal" name="mymeal" type="radio" value="dinner">Dinner
+                    </div>
+                    <div>
+                        <label for="mygames">Choose your game</label>
+                        <select name="mygames" id="mygames">
+                            <option value="0">select...</option>
+                            <option value="1">Apex Legends</option>
+                            <option value="2">Minecraft</option>
+                            <option value="3">Dead by Daylight</option>
+                            <option value="4">Fall Guys</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+                </form>
+                <div class="submit-button">
+                    <button type="Submit">Submit</button>
+                </div>
+        </main>
+	</div>
+</body>
+
+</html>
